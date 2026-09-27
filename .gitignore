@@ -1,0 +1,64 @@
+# Local databases stay on each machine.
+# Pushing these overwrites or conflicts with the database already on the server.
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+*.dump
+*.sql
+*.sql.gz
+*.bak
+backups/
+pgdata/
+postgres-data/
+mysql-data/
+mongo-data/
+data/db/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+local_settings.py
+*.local
+
+# Python / Django runtime
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Collected files and user uploads (server keeps its own copies)
+media/
+staticfiles/
+uploads/
+
+# Logs and process files
+logs/
+*.log
+celerybeat-schedule
+celerybeat.pid
+
+# Node, if the API later uses it
+node_modules/
+dist/
+.vite/
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.sw?
